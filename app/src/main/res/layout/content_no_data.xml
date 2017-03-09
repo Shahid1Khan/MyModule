@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/toolbar"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llNoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:gravity="center"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/dim_60"
+            android:layout_height="@dimen/dim_60"
+            android:src="@drawable/no_data" />
+
+        <com.mymodule.myfontviews.MyTextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_15"
+            android:text="No products added yet"
+            android:textColor="#8000"
+            android:textSize="@dimen/font_size_16" />
+    </LinearLayout>
+</LinearLayout>

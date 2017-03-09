@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gpb="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dim_100"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_white_dilog"
+    android:padding="@dimen/dim_10">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avloadingIndicatorView"
+        android:layout_width="@dimen/dim_50"
+        android:layout_height="@dimen/dim_50"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        app:indicatorName="BallClipRotatePulseIndicator"
+        android:layout_marginTop="@dimen/dim_5"
+        app:indicatorColor="@color/colorPrimary" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/avloadingIndicatorView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dim_8"
+        android:layout_marginTop="@dimen/dim_10"
+        android:text="Please Wait..."
+        android:textColor="#cc000000"
+        android:textSize="@dimen/dim_14"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

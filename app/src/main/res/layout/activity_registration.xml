@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dim_10">
+
+
+            <ImageView
+                android:layout_width="@dimen/dim_50"
+                android:layout_height="@dimen/dim_50"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dim_30"
+                android:src="@mipmap/ic_launcher" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_20">
+
+                <com.mymodule.myfontviews.MyEditTextRegular
+                    android:id="@+id/edtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter UserName"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_10">
+
+                <com.mymodule.myfontviews.MyEditTextRegular
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_10"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#fff">
+
+                <com.mymodule.myfontviews.MyEditTextRegular
+                    android:id="@+id/edtPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Password"
+                    android:inputType="textPassword"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_10">
+
+                <com.mymodule.myfontviews.MyEditTextRegular
+                    android:id="@+id/edtDOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="Enter DOB"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_10">
+
+                <com.mymodule.myfontviews.MyEditTextRegular
+                    android:id="@+id/edtNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Contact No"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <CheckBox
+                android:id="@+id/chkTearms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I accept all Tearms &amp; Conditions"
+                android:textColor="#fff"
+                android:textSize="@dimen/dim_14" />
+
+            <com.mymodule.myfontviews.MyButtonRegular
+                android:id="@+id/btnRegistration"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_20"
+                android:background="@drawable/selector_accent_button"
+                android:text="Registration"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

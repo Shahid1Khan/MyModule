@@ -1,0 +1,59 @@
+package com.mymodule.utils;
+
+import java.util.regex.Pattern;
+
+public class MyValidation {
+
+	private final static Pattern EMAIL_ADDRESS_PATTERN = Pattern.compile(
+
+	"^(([\\w-]+\\.)+[\\w-]+|([a-zA-Z]{1}|[\\w-]{2,}))@"
+			+ "((([0-1]?[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\.([0-1]?"
+			+ "[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\."
+			+ "([0-1]?[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\.([0-1]?"
+			+ "[0-9]{1,2}|25[0-5]|2[0-4][0-9])){1}|"
+			+ "([a-zA-Z]+[\\w-]+\\.)+[a-zA-Z]{2,4})$");
+
+	private static Pattern NAME_PATTERN = Pattern.compile("^[a-zA-Z ]*$");
+
+	private static final Pattern PASSWORD_PATTERN = Pattern
+			.compile("^[a-zA-Z0-9+_.]*${4,16}");
+
+	private static final Pattern MobilePattern = Pattern
+			.compile("^[0-9+]{7,13}$");
+
+	private static final Pattern NumberPattern = Pattern
+			.compile("^[0-9]*$");
+
+
+
+	private static final Pattern PasswordPattern = Pattern
+			.compile("^(?=.*[A-Za-z])(?=.*\\\\\\\\d)(?=.*[$@$!%*#?&])[A-Za-z\\\\\\\\d$@$!%*#?&]{8,}$");
+
+
+	// add this method:
+
+	public boolean checkEmail(String email) {
+		return EMAIL_ADDRESS_PATTERN.matcher(email).matches();
+	}
+
+	public boolean checkPasswords(String password) {
+		return PasswordPattern.matcher(password).matches();
+	}
+
+	public boolean checkName(String name) {
+		return NAME_PATTERN.matcher(name).matches();
+	}
+
+	public boolean checkPassword(String password) {
+		return PASSWORD_PATTERN.matcher(password).matches();
+	}
+
+	public boolean checkMobile(String mobile) {
+		return MobilePattern.matcher(mobile).matches();
+	}
+
+	public boolean checkNumber(String number) {
+		return NumberPattern.matcher(number).matches();
+	}
+
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dim_10"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <com.mymodule.myfontviews.MyTextViewBold
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/dim_2"
+        android:gravity="center_horizontal"
+        android:text="Match Name"
+        android:textColor="#a000"
+        android:textSize="@dimen/font_size_16" />
+
+    <com.mymodule.myfontviews.MyTextViewRegular
+        android:id="@+id/txtTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/dim_5"
+        android:gravity="center_horizontal"
+        android:text="Match Time"
+        android:textColor="#a000"
+        android:textSize="@dimen/font_size_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dim_5"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgFlag1"
+                android:layout_width="@dimen/dim_90"
+                android:layout_height="@dimen/dim_60" />
+
+            <com.mymodule.myfontviews.MyTextViewRegular
+                android:id="@+id/txtTeam1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_5"
+                android:gravity="center"
+                android:text="Team 1"
+                android:textColor="#000"
+                android:textSize="@dimen/font_size_14" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dim_5">
+
+            <ImageView
+                android:id="@+id/imgFlag2"
+                android:layout_width="@dimen/dim_90"
+                android:layout_height="@dimen/dim_60"
+                android:gravity="center" />
+
+            <com.mymodule.myfontviews.MyTextViewRegular
+                android:id="@+id/txtTeam2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_5"
+                android:gravity="center"
+                android:text="Team 1"
+                android:textColor="#000"
+                android:textSize="@dimen/font_size_14" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_1"
+        android:background="#2000" />
+
+</LinearLayout>
